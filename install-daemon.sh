@@ -21,7 +21,7 @@ fi
 TEST=$1
 
 DISTRIB_ID=$(cat /etc/*-release | grep DISTRIB_ID | cut -d'=' -f2)
-$DISTRIB_ID=$( echo $DISTRIB_ID | tr '[:upper:]' '[:lower:]')
+DISTRIB_ID=$( echo $DISTRIB_ID | tr '[:upper:]' '[:lower:]')
 
 
 if [ $DISTRIB_ID="ubuntu" ]; then
